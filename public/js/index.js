@@ -40,7 +40,7 @@ setTimeout(loopThroughQuotes, 3000);*/
 
 
 async function getRandomImage() {
-    const client_id = "rqJcUbcsb63b7SVNgu3eDsYRW-RjJvH7tEj8cK_UjMo";
+    const client_id = " ";
     const endpoint = `https://api.unsplash.com/photos/random/?client_id=${client_id}`;
     try {
         const response = await fetch(endpoint);
