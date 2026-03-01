@@ -1,6 +1,6 @@
 "use strict"
 
-/*const elements = {
+const elements = {
     quote: document.getElementById("quote"),
     author: document.getElementById("author"),
 };
@@ -36,12 +36,11 @@ function loopThroughQuotes() {
     }, 3000);
 }
    
-setTimeout(loopThroughQuotes, 3000);*/
+setTimeout(loopThroughQuotes, 3000);
 
 
 async function getRandomImage() {
-    const client_id = " ";
-    const endpoint = `https://api.unsplash.com/photos/random/?client_id=${client_id}`;
+    const endpoint = "http://localhost:8080/api/v1/getRandomImage";
     try {
         const response = await fetch(endpoint);
         const returnedData = await response.json()
